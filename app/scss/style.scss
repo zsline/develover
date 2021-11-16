@@ -1,0 +1,51 @@
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "libs";
+@import "global";
+@import "light";
+@import "theambtn";
+
+.header {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: center;
+  }
+  &__action {
+    position: relative;
+    padding-right: 50px;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -4px;
+      right: 0;
+      background-image: url(../images/polygon.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 30px;
+      height: 33px;
+    }
+  }
+  &__menu ul {
+    display: flex;
+    a {
+    }
+    li {
+      margin-left: 40px;
+      font-weight: 600;
+      opacity: 0.4;
+      text-shadow: -10px -6px 4px rgba(0, 0, 0, 1);
+      transition: all 0.3s;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+.logo img {
+  width: 298px;
+  height: 42px;
+}
