@@ -49,3 +49,33 @@
   width: 298px;
   height: 42px;
 }
+
+.offer{
+  margin-top: 10%;
+  &__info{
+    width: 60%;
+    p{
+      max-width: 600px;
+      padding-left: 22px;
+      position: relative;
+      margin-bottom: 26px;
+      &::before{
+        content: '';
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+    img{
+    position: absolute;
+    top: 0;
+  }
+}
+
+@import "media";

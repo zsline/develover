@@ -8,7 +8,7 @@ body.light {
   h2 {
     font-weight: 300;
   }
-  input{
+  input {
     color: $bg;
   }
   .sh-box {
@@ -101,9 +101,25 @@ body.light {
   .clients-inner {
     border: 1px solid $bg;
   }
-  .social-box ul li a svg{
-     
-      fill: $bg;
-    
+  .social-box ul li a svg {
+    fill: $bg;
+  }
+  .offer {
+    position: relative;
+    &__info {
+      p {
+        &::before {
+          background: $bg;
+          content: "";
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+    }
   }
 }
