@@ -46,12 +46,14 @@
   }
 }
 .logo img {
-  width: 298px;
-  height: 42px;
+  max-width: 200px;
+  // height: 42px;
+  margin-right: 50px;
 }
 
 .offer{
   margin-top: 10%;
+  height: 80vh;
   &__info{
     width: 60%;
     p{
@@ -75,6 +77,17 @@
     img{
     position: absolute;
     top: 0;
+    right: 5%;
+    max-width: 70%;
+  }
+}
+
+.price{
+  &__card{
+    svg{
+      fill: #fff;
+      width: 100px;
+    }
   }
 }
 
