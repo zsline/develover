@@ -115,6 +115,11 @@ h3 {
   text-align: center;
   text-transform: uppercase; }
 
+h4 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 132.4%; }
+
 .theams {
   z-index: 999; }
 
@@ -173,6 +178,17 @@ h3 {
     display: flex; }
     .social-box ul li {
       margin-right: 40px; }
+
+.btn-fill {
+  padding: 20px 70px;
+  background-color: #393939;
+  display: block;
+  border-radius: 20px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .btn-fill:hover {
+    background-color: #FB1B3D; }
 
 body.light {
   background-color: #fff;
@@ -339,6 +355,36 @@ body.light {
 
 .checkbox:checked + .checkbox-label {
   left: 25px; }
+
+.price__inner {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+  grid-gap: 2vw;
+  width: 100%;
+  text-align: center;
+  margin-top: 100px; }
+
+.price__card {
+  padding: 20px;
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 3px 15px white;
+          box-shadow: 1px 3px 15px white;
+  opacity: .5;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s; }
+  .price__card:hover {
+    opacity: 1; }
+  .price__card svg {
+    margin: 25px auto; }
+
+.price__total {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 132.4%;
+  margin: 20px 0 30px; }
 
 .header__top {
   display: -webkit-box;

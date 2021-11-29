@@ -70,6 +70,9 @@ h3 {
   text-transform: uppercase;
 }
 h4 {
+  font-weight: bold;
+font-size: 24px;
+line-height: 132.4%;
 
 }
 .theams {
@@ -128,5 +131,15 @@ h4 {
     li {
       margin-right: 40px;
     }
+  }
+}
+.btn-fill{
+  padding: 20px 70px;
+  background-color: #393939;
+  display: block;
+  border-radius: 20px;
+  transition: all .3s;
+  &:hover{
+  background-color: $red;
   }
 }
