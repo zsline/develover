@@ -1,3 +1,76 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent; }
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .slick-list:focus {
+    outline: none; }
+  .slick-list.dragging {
+    cursor: pointer;
+    cursor: hand; }
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+  .slick-track:before, .slick-track:after {
+    content: "";
+    display: table; }
+  .slick-track:after {
+    clear: both; }
+  .slick-loading .slick-track {
+    visibility: hidden; }
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none; }
+  [dir="rtl"] .slick-slide {
+    float: right; }
+  .slick-slide img {
+    display: block; }
+  .slick-slide.slick-loading img {
+    display: none; }
+  .slick-slide.dragging img {
+    pointer-events: none; }
+  .slick-initialized .slick-slide {
+    display: block; }
+  .slick-loading .slick-slide {
+    visibility: hidden; }
+  .slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent; }
+
+.slick-arrow.slick-hidden {
+  display: none; }
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -104,9 +177,11 @@ h1 {
   text-transform: uppercase; }
 
 h2 {
-  font-size: 46px;
-  font-weight: 100;
-  line-height: 108.5%; }
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 132.4%;
+  text-align: center;
+  text-transform: uppercase; }
 
 h3 {
   font-weight: 400;
@@ -116,7 +191,7 @@ h3 {
   text-transform: uppercase; }
 
 h4 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 24px;
   line-height: 132.4%; }
 
@@ -184,11 +259,22 @@ h4 {
   background-color: #393939;
   display: block;
   border-radius: 20px;
-  -webkit-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s; }
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
   .btn-fill:hover {
     background-color: #FB1B3D; }
+
+.title {
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 132.4%;
+  text-align: center;
+  text-transform: uppercase; }
+
+.blur {
+  -webkit-filter: blur(10px);
+          filter: blur(10px); }
 
 body.light {
   background-color: #fff;
@@ -386,6 +472,60 @@ body.light {
   line-height: 132.4%;
   margin: 20px 0 30px; }
 
+.services {
+  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 630px;
+  position: relative;
+  margin-top: 100px; }
+  .services h2 {
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    width: 50px;
+    position: absolute;
+    bottom: 80px; }
+  .services__info {
+    margin: 157px 0 0 150px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .services__info .slick-track {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
+  .services__slider {
+    position: relative;
+    margin-right: 0;
+    margin-left: auto;
+    max-width: 900px; }
+    .services__slider img {
+      position: absolute;
+      top: 30px;
+      left: 50px;
+      height: 350px; }
+    .services__slider .blur {
+      top: 0px;
+      left: 0; }
+  .services .title {
+    padding-top: 400px; }
+  .services .slick-slide h4 {
+    display: block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    width: 220px;
+    cursor: pointer;
+    border-radius: 10px; }
+  .services .slick-current h4 {
+    background: #FB1B3D; }
+
 .header__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,9 +600,11 @@ body.light {
     right: 5%;
     max-width: 70%; }
 
-.price__card svg {
-  fill: #fff;
-  width: 100px; }
+.price {
+  margin-bottom: 100px; }
+  .price__card svg {
+    fill: #fff;
+    width: 100px; }
 
 @media (min-width: 575.98px) {
   section, header, footer {

@@ -6,6 +6,7 @@
 @import "light";
 @import "theambtn";
 @import "card";
+@import "services";
 
 .header {
   &__top {
@@ -84,6 +85,7 @@
 }
 
 .price{
+  margin-bottom: 100px;
   &__card{
     svg{
       fill: #fff;

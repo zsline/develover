@@ -58,9 +58,11 @@ h1 {
   text-transform: uppercase;
 }
 h2 {
-  font-size: 46px;
-  font-weight: 100;
-  line-height: 108.5%;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 132.4%;
+  text-align: center;
+  text-transform: uppercase;
 }
 h3 {
   font-weight: 400;
@@ -70,10 +72,9 @@ h3 {
   text-transform: uppercase;
 }
 h4 {
-  font-weight: bold;
-font-size: 24px;
-line-height: 132.4%;
-
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 132.4%;
 }
 .theams {
   z-index: 999;
@@ -133,13 +134,23 @@ line-height: 132.4%;
     }
   }
 }
-.btn-fill{
+.btn-fill {
   padding: 20px 70px;
   background-color: #393939;
   display: block;
   border-radius: 20px;
-  transition: all .3s;
-  &:hover{
-  background-color: $red;
+  transition: all 0.3s;
+  &:hover {
+    background-color: $red;
   }
+}
+.title{
+    font-weight: bold;
+  font-size: 50px;
+  line-height: 132.4%;
+  text-align: center;
+  text-transform: uppercase;
+}
+.blur{
+  filter: blur(10px);
 }
